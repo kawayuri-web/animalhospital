@@ -4,6 +4,7 @@
 :root {
     --color-main: #505050;
     --color-sub: #0D96A0;
+    --color-border: #707070
 }
 
 html {
@@ -134,6 +135,16 @@ img {
     }
 }
 
+.header__logo a {
+    transition: opacity 0.4s;
+}
+
+@media (any-hover: hover) {
+    .header__logo a:hover {
+        opacity: .7;
+    }
+}
+
 .header-logo__image img {
     width: 2.55rem;
     height: 2.5rem;
@@ -147,6 +158,13 @@ img {
 .header-nav__item a {
     font-size: 1.4rem;
     line-height: calc(14 / 14);
+    transition: opacity 0.4s;
+}
+
+@media (any-hover: hover) {
+    .header-nav__item a:hover {
+        opacity: .7;
+    }
 }
 
 .fv {
@@ -425,4 +443,59 @@ img {
         font-size: 1.6rem;
         line-height: calc(30 / 16);
     }
+}
+
+.information {
+    background-color: rgba(13, 150, 160, .102);
+    padding: 6.3rem 3rem 6.8rem;
+}
+@media (max-width:767px) {
+    .information {
+        padding: 4.3rem 2rem 5rem;
+    }
+}
+
+.information__contents {
+    margin-top: 5.2rem;
+}
+
+.information__items {
+    display: flex;
+    padding-block: 1.5rem;
+    border-top: 0.1rem solid var(--color-border);
+}
+
+.information__items:last-child {
+    border-bottom: 0.1rem solid var(--color-border);
+}
+
+@media (max-width:767px) {
+    .information__items {
+        flex-direction: column;
+    }
+}
+
+.information__items time {
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: calc(25 / 17);
+}
+
+.information__items a {
+    color: var(--color-sub);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: calc(25 / 20);
+    transition: opacity 0.4s;
+}
+
+@media (any-hover: hover) {
+    .information__items a:hover {
+        opacity: .7;
+    }
+}
+
+.information__items p {
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
 }
