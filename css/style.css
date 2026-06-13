@@ -30,12 +30,6 @@ body {
     margin-inline: auto;
 }
 
-/* @media (max-width:767px) {
-    .inner {
-        padding-inline: 2rem;
-    }
-} */
-
 img {
     width: 100%;
     height: auto;
@@ -98,6 +92,10 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 0.8rem;
+}
+
+.ib-span {
+    display: inline-block;
 }
 
 .header {
@@ -456,13 +454,16 @@ img {
 }
 
 .information__contents {
-    margin-top: 5.2rem;
+    margin-top: 4.6rem;
 }
 
 .information__items {
     display: flex;
-    padding-block: 1.5rem;
+    padding: 1.5rem 1.8rem;
     border-top: 0.1rem solid var(--color-border);
+    transition: opacity 0.4s;
+    align-items: center;
+    column-gap: calc(25 / 880 * 100%);
 }
 
 .information__items:last-child {
@@ -472,6 +473,9 @@ img {
 @media (max-width:767px) {
     .information__items {
         flex-direction: column;
+        padding: 2.8rem 1rem;
+        padding-right: 0;
+        align-items: start;
     }
 }
 
@@ -481,7 +485,18 @@ img {
     line-height: calc(25 / 17);
 }
 
-.information__items a {
+.information-item__title {
+    width: 18.4rem;
+}
+
+@media (max-width:767px) {
+    .information-item__title{
+        width: initial;
+        margin-top: 0.2rem;
+    }
+}
+
+.information-item__title h3 {
     color: var(--color-sub);
     font-weight: 700;
     font-size: 2rem;
@@ -490,14 +505,30 @@ img {
 }
 
 @media (any-hover: hover) {
-    .information__items a:hover {
+    .information__contents a:hover {
         opacity: .7;
     }
 }
 
-.information__items p {
+.information-item__text {
+    flex: 1;
+}
+@media (max-width:767px) {
+    .information-item__text {
+        margin-top: 0.6rem;
+    }
+}
+
+.information-item__text p {
     font-size: 1.7rem;
     line-height: calc(30 / 17);
+}
+
+@media (max-width:767px) {
+    .information-item__text p {
+        font-size: 1.6rem;
+        line-height: calc(24 / 16);
+    }
 }
 
 .access {
@@ -512,20 +543,41 @@ img {
 
 .access__contents {
     display: flex;
-    margin-top: 5.2rem;
+    margin-top: 4.6rem;
     column-gap: calc(46 / 880 * 100%);
 }
 
 @media (max-width:767px) {
     .access__contents {
         flex-direction: column;
+        row-gap: 3rem;
     }
 }
 
+.access__map {
+    width: 50%;
+}
+
 @media (max-width:767px) {
-    .address__title {
-        margin-top: 3rem;
+    .access__map {
+        width: 100%;
     }
+}
+
+.access__map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:767px) {
+    .access__map iframe {
+        height: auto;
+        aspect-ratio: 335 / 222;
+    }
+}
+
+.access__address {
+    flex: 1;
 }
 
 .address__title h3 {
@@ -548,6 +600,13 @@ img {
     line-height: calc(27 / 18);
 }
 
+@media (max-width:767px) {
+    .address__detail address {
+        font-size: 1.6rem;
+        line-height: calc(24 / 16);
+    }
+}
+
 .address__phone {
     display: flex;
     align-items: baseline;
@@ -562,6 +621,13 @@ img {
 
 .address__phone p {
     line-height: calc(27 / 18);
+}
+
+@media (max-width:767px) {
+    .address__phone p {
+        font-size: 1.6rem;
+        line-height: calc(27 / 16);
+    }
 }
 
 .address__phone a {
@@ -580,6 +646,8 @@ img {
 @media (max-width:767px) {
     .address__email {
         margin-top: 0.7rem;
+        font-size: 1.6rem;
+        line-height: calc(24 / 16);
     }
 }
 
@@ -598,4 +666,166 @@ img {
 
 .office__hours p {
     line-height: calc(40 / 18);
+}
+
+@media (max-width:767px) {
+    .office__hours p {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+    }
+}
+
+/* contact */
+
+.contact {
+    background-color: rgba(13, 150, 160, .102);
+    padding: 6.2rem 3rem 8rem;
+}
+
+@media (max-width:767px) {
+    .contact {
+        padding: 4.3rem 2rem 5rem;
+    }
+}
+
+.contact__text {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+@media (max-width:767px) {
+    .contact__text {
+        text-align: left;
+        margin-top: 4.3rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.contact__text p {
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
+}
+
+@media (max-width:767px) {
+    .contact__text p {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+    }
+}
+
+.form {
+    margin-top: 3.9rem;
+}
+
+@media (max-width:767px) {
+    .form {
+        margin-top: 3.4rem;
+    }
+}
+
+.form__area {
+    display: flex;
+}
+
+@media (max-width:767px) {
+    .form__area {
+        flex-direction: column;
+        row-gap: 0.2rem;
+    }
+}
+
+.form__area:not(:first-of-type) {
+    margin-top: 3rem;
+}
+
+@media (max-width:767px) {
+    .form__area:not(:first-of-type) {
+        margin-top: 1.7rem;
+    }
+}
+
+.form__area label {
+    width: 16.9rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+}
+
+@media (max-width:767px) {
+    .form__area label {
+        width: 100%;
+        height: initial;
+        font-size: 1.8rem;
+        line-height: calc(33 / 18);
+    }
+}
+
+.form-control {
+    flex: 1;
+    background-color: #fff;
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+}
+
+@media (max-width:767px) {
+    .form-control {
+        flex: initial;
+        height: 5rem;
+    }
+}
+
+.form-textarea {
+    height: 30rem;
+    padding: 1rem;
+}
+
+@media (max-width:767px) {
+    .form-textarea {
+        height: 30rem;
+    }
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.submit-button {
+    font-size: 2.5rem;
+    line-height: calc(33 / 25);
+    font-weight: 700;
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--color-sub);
+    color: #fff;
+    /* display: flex;の下記記載ではなぜか中央揃えにならなかったためtext-align:center;で揃えてます */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 0.2rem solid var(--color-sub);
+    transition: color 0.4s;
+    transition: background 0.4s;
+}
+
+@media (max-width:767px) {
+    .submit-button {
+        width: 33.5rem;
+        height: 4.1rem;
+    }
+}
+
+@media (any-hover: hover) { 
+    .submit-button:hover {
+        background: #fff;
+        color: var(--color-sub);
+    }
 }
