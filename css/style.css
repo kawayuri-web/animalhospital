@@ -75,8 +75,8 @@ img {
     width: 2.55rem;
     height: auto;
     aspect-ratio: 25.49 / 25;
-    background-size: cover;
-    /* background-size: contain; */
+    /* background-size: cover; */
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -92,8 +92,8 @@ img {
     width: 2.55rem;
     height: 2.5rem;
     aspect-ratio: 25.49 / 25;
-    background-size: cover;
-    /* background-size: contain; */
+    /* background-size: cover; */
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
