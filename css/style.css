@@ -112,6 +112,12 @@ img {
     padding-inline: 3rem;
 }
 
+@media (max-width:767px) {
+    .header {
+        padding-inline: 2rem;
+    }
+}
+
 .header .inner {
     height: 100%;
     display: flex;
@@ -194,30 +200,23 @@ img {
     height: 100%;
 }
 
-@media (max-width:767px) {
-    .fv__contents {
-        top: inherit;
-        bottom: 0;
-        width: calc(311 / 375 * 100vw);
-    }
-}
-
 .fv__inner {
     display: flex;
     align-items: center;
     height: 100%;
-    padding-top: calc(14 / 1080 * 100%);
+    padding-top: calc(14 / 550 * 100vh);
 }
 
 @media (max-width:767px) {
     .fv__inner {
         align-items: end;
+        padding-top: initial;
     }
 }
 
 .fv-contents__textarea {
     background-color: rgba(256, 256, 256, .702);
-    padding-block: calc(23 / 500 * 100%);
+    padding-block: calc(23 / 550 * 100vh);
     width: calc(492 / 1080 * 100vw);
     padding-left: calc(100 / 1080 * 100vw);
 }
@@ -225,12 +224,12 @@ img {
 
 @media (max-width:767px) {
     .fv-contents__textarea {
-        padding-top: calc(18 / 550 * 100%);
-        padding-bottom: calc(14 / 550 * 100%);
+        padding-top: calc(18 / 600 * 100vh);
+        padding-bottom: calc(14 / 600 * 100vh);
         width: calc(311 / 375 * 100vw);
-        padding-left: calc(20 / 375 * 100vh);
+        padding-left: calc(20 / 375 * 100vw);
     }
-}
+} 
 
 .fv-contents__textarea h2 {
     font-size: calc(25 / 1080 * 100vw);
@@ -248,7 +247,7 @@ img {
     font-weight: 700;
     line-height: calc(60 / 40);
     color: var(--color-sub);
-    margin-top: calc(14 / 500 * 100%);
+    margin-top: calc(8 / 550 * 100vh);
 }
 
 @media (max-width:767px) {
@@ -259,7 +258,6 @@ img {
 }
 
 .greeting {
-    /* position: relative; */
     padding: 6rem 3rem;
 }
 
@@ -280,6 +278,13 @@ img {
     line-height: calc(50 / 30);
 }
 
+@media (max-width:767px) {
+    .greeting__title {
+        font-size: 2.5rem;
+        line-height: calc(35 / 25);
+    }
+}
+
 .greeting__message {
     line-height: calc(33 / 18);
     margin-top: 1.5rem;
@@ -287,6 +292,7 @@ img {
 
 @media (max-width:767px) {
     .greeting__message {
+        font-size: 1.6rem;
         line-height: calc(30 / 16);
         margin-top: 1.7rem;
         text-align: left;
@@ -301,27 +307,27 @@ img {
     position: absolute;
     bottom: -2.612rem;
     right: -2.376rem;
+    width: 8.375rem;
+    height: auto;
 }
 
 @media (max-width:767px) {
     .greeting__deco {
         bottom: 0.757rem;
         right: 0.955rem;
+        width: 6.835rem;
+        height: auto;
     }
 }
 
 .greeting__deco img {
     aspect-ratio: 83.75 / 77.12;
     object-fit: cover;
-    width: 8.375rem;
-    height: auto;
 }
 
 @media (max-width:767px) {
     .greeting__deco img {
         aspect-ratio: 68.35 / 62.94;
-        width: 6.835rem;
-        height: auto;
     }
 }
 
@@ -337,9 +343,10 @@ img {
 }
 
 .features__wrapper {
-    margin-top: 5.4rem;
+    margin-top: 4.8rem;
     display: flex;
-    column-gap: 4.6rem;
+    column-gap: 4.5rem;
+    justify-content: space-between;
 }
 
 @media (max-width:767px) {
@@ -359,6 +366,11 @@ img {
     }
 }
 
+.features__textarea {
+    /* width: 39.6rem; */
+    flex: 1;
+}
+
 .features__title {
     margin-top: 4.8rem;
 }
@@ -366,6 +378,7 @@ img {
 @media (max-width:767px) {
     .features__title {
         margin-top: 2.6rem;
+        text-align: center;
     }
 }
 
@@ -373,6 +386,13 @@ img {
     font-size: 2.2rem;
     font-weight: 700;
     line-height: calc(33 / 22);
+}
+
+@media (max-width:767px) {
+    .features__title h3 {
+        font-size: 2rem;
+        line-height: calc(30 / 20);
+    }
 }
 
 .features__text {
@@ -389,6 +409,30 @@ img {
     line-height: calc(33 / 18);
 }
 
+@media (max-width:767px) {
+    .features__text p {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+    }
+}
+
+@media (max-width:767px) {
+    .features__text span {
+        display: inline-block;
+    }
+}
+
+.features__image {
+    width: 44rem;
+    height: auto;
+}
+
+@media (max-width:767px) {
+    .features__image {
+        width: 100%;
+    }
+}
+
 .features__image img {
     aspect-ratio: 440 / 247;
     object-fit: cover;
@@ -397,7 +441,6 @@ img {
 @media (max-width:767px) {
     .features__image img {
         aspect-ratio: 335 / 200;
-        width: 100%;
     }
 }
 
@@ -407,7 +450,7 @@ img {
 
 @media (max-width:767px) {
     .service {
-        padding: 4.5rem 2rem 3.9rem;
+        padding: 4.4rem 2rem 3.9rem;
     }
 }
 
@@ -420,13 +463,22 @@ img {
 @media (max-width:767px) {
     .service__contents {
         flex-direction: column;
-        margin-top: 5rem;
+        margin-top: 4.4rem;
     }
 }
 
-/* .service__image {
-    width: calc(260 / 880 * 100%);
-} */
+@media (max-width:767px) {
+    .service__items:not(:first-of-type){
+        margin-top: 3.9rem;
+    }
+}
+
+@media (max-width:767px) {
+    .service__image {
+        width: 100%;
+        height: auto;
+    }
+}
 
 .service__image img {
     aspect-ratio: 260 / 200;
@@ -505,7 +557,9 @@ img {
 
 .information__items {
     display: flex;
-    padding: 1.5rem 1.8rem;
+    /* カンプはpadding-block: 1.5rem;と読み取れるのですが、パーフェクト
+    ピクセルを合わせると1.4remになってしまいます。 */
+    padding: 1.4rem 1.9rem;
     transition: opacity 0.4s;
     align-items: center;
     column-gap: calc(25 / 880 * 100%);
@@ -518,8 +572,8 @@ img {
 @media (max-width:767px) {
     .information__items {
         flex-direction: column;
-        padding: 2.8rem 1rem;
-        padding-right: 0;
+        /* カンプからはpadding:2.8remと読み取れますが、どうしてもborderの分がずれていくので数値を減らしています */
+        padding: 2.75rem 1rem;
         align-items: start;
     }
 }
@@ -546,7 +600,7 @@ img {
     font-weight: 700;
     font-size: 2rem;
     line-height: calc(25 / 20);
-    transition: opacity 0.4s;
+    /* transition: opacity 0.4s; */
 }
 
 @media (any-hover: hover) {
@@ -596,7 +650,8 @@ img {
 @media (max-width:767px) {
     .access__contents {
         flex-direction: column;
-        row-gap: 3rem;
+        /* カンプからは3remと読み取れましたが、パーフェクトピクセルのために数値を変更しました */
+        row-gap: 2.7rem;
     }
 }
 
@@ -919,6 +974,12 @@ img {
     justify-content: center;
     column-gap: 1.4rem;
     flex-wrap: wrap;
+}
+
+@media (max-width:767px) {
+    .footer-nav__items {
+        column-gap: 2rem;
+    }
 }
 
 .footer-nav__item a {
