@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>滑石きたむら動物病院</title>
     <meta name="description" content="滑石きたむら動物病院の公式サイトです" />
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./images/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./images/icon.png">
   </head>
   <body>
     <div id="container">
       <header class="header">
         <div class="inner">
           <div class="header__logo">
-            <div class="header-logo__image">
-              <img src="./images/足跡_1.svg" alt="滑石きたむら動物病院" />
-            </div>
-            <h1><a href="#">滑石きたむら動物病院</a></h1>
+            <h1>
+              <a href="#">
+                <div class="header-logo__image">
+                  <img src="./images/足跡_1.svg" alt="滑石きたむら動物病院" />
+                </div>
+                <div class="header-logo__text">滑石きたむら動物病院</div>
+              </a>
+            </h1>
           </div>
           <nav class="header__nav pc">
             <ul class="header-nav__items">
@@ -58,13 +64,15 @@
         <div class="fv__contents">
           <div class="fv__inner">
             <div class="fv-contents__textarea">
-              <h2>滑石きたむら動物病院は</h2>
-              <p>大切な家族の<br />ホームドクターです</p>
+              <h2>
+                滑石きたむら動物病院は<br />
+                <span>大切な家族の<br />ホームドクターです</span>
+              </h2>
             </div>
           </div>
         </div>
       </div>
-      
+
       <main>
         <section id="greeting" class="greeting">
           <div class="inner">
@@ -74,8 +82,8 @@
               </div>
               <div class="greeting__message">
                 <p>
-                  当院は地域に密着し、皆さまの大切な家族の一員である動物たちのホームドクターを目指しています。<br />
-                  緊急時だけではなく、日常のちょっとした不安や違和感などお気軽にご相談ください。<br />
+                  当院は地域に密着し、皆さまの大切な家族の一員である動物たちの<span class="ib-span__pc">ホームドクターを目指しています。</span><br />
+                  緊急時だけではなく、日常のちょっとした不安や違和感など<span class="ib-span__pc">お気軽にご相談ください。</span><br />
                   動物たちが健康で幸せな生活を送ることができるようサポートいたします。
                 </p>
               </div>
@@ -92,81 +100,88 @@
           </div>
         </section>
 
-        <section id="features" class="features">
+        <section id="features" class="features section-bg">
           <div class="inner">
             <div class="section__title">
               <h2>強み</h2>
             </div>
-            <div class="features__wrapper">
-              <div class="features__textarea">
-                <div class="features__title">
-                  <h3>経験豊富なスタッフが<br class="sp">24時間365日常駐</h3>
+
+            <div class="features__contents">
+              <div class="features__wrapper">
+                <div class="features__textarea">
+                  <div class="features__title">
+                    <h3>
+                      経験豊富なスタッフが<br class="sp" />24時間365日常駐
+                    </h3>
+                  </div>
+                  <div class="features__text">
+                    <p>
+                      当院は24時間365日いつでも対応できるよう、豊富な経験を持つ獣医師や看護師が約50名体制で常駐しております。
+                    </p>
+                  </div>
                 </div>
-                <div class="features__text">
-                  <p>
-                    当院は24時間365日いつでも対応できるよう、豊富な経験を持つ獣医師や看護師が約50名体制で常駐しております。
-                  </p>
-                </div>
-              </div>
-              <div class="features__image">
-                <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./images/about_01.jpg"
-                  />
-                  <img
-                    src="./images/about_01_sp.jpg"
-                    alt="経験豊富なスタッフが24時間365日常駐"
-                  />
-                </picture>
-              </div>
-            </div>
-            <div class="features__wrapper">
-              <div class="features__textarea">
-                <div class="features__title">
-                  <h3>エキゾチックアニマルも対応します</h3>
-                </div>
-                <div class="features__text">
-                  <p>
-                    犬・猫だけではなく、ウサギやハムスター、爬虫類や両生類、鳥類などエキゾチックアニマルも対応しております。
-                  </p>
+                <div class="features__image">
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/about_01.jpg"
+                    />
+                    <img
+                      src="./images/about_01_sp.jpg"
+                      alt="経験豊富なスタッフが24時間365日常駐"
+                    />
+                  </picture>
                 </div>
               </div>
-              <div class="features__image">
-                <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./images/about_02.jpg"
-                  />
-                  <img
-                    src="./images/about_02_sp.jpg"
-                    alt="エキゾチックアニマルも対応します"
-                  />
-                </picture>
-              </div>
-            </div>
-            <div class="features__wrapper">
-              <div class="features__textarea">
-                <div class="features__title">
-                  <h3>ご自宅まで伺う往診も行っています</h3>
+
+              <div class="features__wrapper">
+                <div class="features__textarea">
+                  <div class="features__title">
+                    <h3>エキゾチックアニマルも対応します</h3>
+                  </div>
+                  <div class="features__text">
+                    <p>
+                      犬・猫だけではなく、ウサギやハムスター、爬虫類や両生類、鳥類などエキゾチックアニマルも対応しております。
+                    </p>
+                  </div>
                 </div>
-                <div class="features__text">
-                  <p>
-                    外出が難しい動物たちや飼い主さまのために、獣医師や看護師がご自宅まで伺う往診<span>サービス</span>も行っております。
-                  </p>
+                <div class="features__image">
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/about_02.jpg"
+                    />
+                    <img
+                      src="./images/about_02_sp.jpg"
+                      alt="エキゾチックアニマルも対応します"
+                    />
+                  </picture>
                 </div>
               </div>
-              <div class="features__image">
-                <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./images/about_03.jpg"
-                  />
-                  <img
-                    src="./images/about_03_sp.jpg"
-                    alt="ご自宅まで伺う往診も行っています"
-                  />
-                </picture>
+
+              <div class="features__wrapper">
+                <div class="features__textarea">
+                  <div class="features__title">
+                    <h3>ご自宅まで伺う往診も行っています</h3>
+                  </div>
+                  <div class="features__text">
+                    <p>
+                      外出が難しい動物たちや飼い主さまのために、獣医師や看護師がご自宅まで伺う往診<span>サービス</span>も行っております。
+                    </p>
+                  </div>
+                </div>
+                <div class="features__image">
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/about_03.jpg"
+                    />
+                    <img
+                      src="./images/about_03_sp.jpg"
+                      alt="ご自宅まで伺う往診も行っています"
+                    />
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -193,7 +208,7 @@
                 </div>
                 <div class="service__text">
                   <p>
-                    シニアや介護などのペットのための自宅で診療するサービスです
+                    シニアや介護などのペットのための自宅で診療するサービスです。
                   </p>
                 </div>
               </li>
@@ -212,7 +227,7 @@
                 </div>
                 <div class="service__text">
                   <p>
-                    短時間の一時預かりから宿泊までご利用いただけるサービスです
+                    短時間の一時預かりから宿泊までご利用いただけるサービスです。
                   </p>
                 </div>
               </li>
@@ -230,13 +245,13 @@
                   <h3>トリミング</h3>
                 </div>
                 <div class="service__text">
-                  <p>動物の体に負担をかけない技術や液剤を使用いたします</p>
+                  <p>動物の体に負担をかけない技術や液剤を使用いたします。</p>
                 </div>
               </li>
             </ul>
           </div>
         </section>
-        <section id="information" class="information">
+        <section id="information" class="information section-bg">
           <div class="inner">
             <div class="section__title">
               <h2>お知らせ</h2>
@@ -300,6 +315,9 @@
             </div>
           </div>
         </section>
+
+        <!-- access -->
+         
         <section id="access" class="access">
           <div class="inner">
             <div class="section__title">
@@ -329,23 +347,28 @@
                   </address>
                 </div>
                 <div class="address__phone">
-                  <p>電話：</p>
-                  <a href="tel:00000000000">000-0000-0000</a>
+                  <span>電話：</span>
+                  <a href="tel:00000000000" class="sp">000-0000-0000</a>
+                  <span class="tel-pc pc">000-0000-0000</span>
                 </div>
                 <div class="address__email">
-                  <p>メール：</p>
+                  <span>メール：</span>
                   <a href="mailto:info@example.com">info@example.com</a>
                 </div>
                 <div class="address__business">
                   <div class="office__hours">
-                    <p>診療時間：24時間365日<br />休診日：なし</p>
+                    <p>診療時間：24時間365日</p>
+                    <p>休診日：なし</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section id="contact" class="contact">
+
+        <!-- contact -->
+
+        <section id="contact" class="contact section-bg">
           <div class="inner">
             <div class="section__title">
               <h2>お問い合わせ</h2>
@@ -384,12 +407,15 @@
                 ></textarea>
               </div>
               <div class="form-submit">
-                <input type="submit" class="submit-button" value="送信" />
+                <input type="submit" class="submit-button" value="送 信" />
               </div>
             </form>
           </div>
         </section>
       </main>
+
+      <!-- footer -->
+
       <footer class="footer">
         <div class="inner">
           <div class="footer__contents">
@@ -419,26 +445,26 @@
               </ul>
             </nav>
             <div class="footer__copy">
-              <small>&copy;Copyright0000　滑石きたむら動物病院</small>
+              <small>&copy;Copyright0000　<span class="ib-span">滑石きたむら動物病院</span></small>
             </div>
             <div class="footer__link">
               <ul class="footer-link__items">
-                <li class="footer-link__item">
+                <li class="footer-link__item twitter">
                   <a href="#"
                     ><img src="images/icon_twitter.svg" alt="twitter"
                   /></a>
                 </li>
-                <li class="footer-link__item">
+                <li class="footer-link__item facebook">
                   <a href="#"
                     ><img src="images/icon_facebook.svg" alt="facebook"
                   /></a>
                 </li>
-                <li class="footer-link__item">
+                <li class="footer-link__item youtube">
                   <a href="#"
                     ><img src="images/icon_youtube.svg" alt="youtube"
                   /></a>
                 </li>
-                <li class="footer-link__item">
+                <li class="footer-link__item instagram">
                   <a href="#"
                     ><img src="images/icon_instagram.svg" alt="instagram"
                   /></a>
