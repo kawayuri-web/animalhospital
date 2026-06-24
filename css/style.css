@@ -771,8 +771,6 @@ img {
 }
 
 .address__phone {
-    /* display: flex; */
-    /* align-items: baseline; */
     margin-top: 1.4rem;
 }
 
@@ -782,12 +780,12 @@ img {
     }
 }
 
-.address__phone span {
+.tel__title {
     line-height: calc(27 / 18);
 }
 
 @media (max-width:767px) {
-    .address__phone + span {
+    .tel__title {
         font-size: 1.6rem;
         line-height: calc(27 / 16);
     }
