@@ -25,6 +25,7 @@ body {
     color: var(--color-main);
     line-height: calc(33 / 18);
     letter-spacing: 0;
+    padding-top: 5rem;
 }
 
 @media (max-width:767px) {
@@ -140,9 +141,14 @@ img {
     align-items: center;
 }
 
+.header__logo {
+    height: 100%;
+}
+
 .header__logo h1 {
     font-weight: 700;
     line-height: calc(33 / 18);
+    height: 100%;
 }
 
 @media (max-width:767px) {
@@ -157,6 +163,7 @@ img {
     align-items: center;
     column-gap: 0.951rem;
     transition: opacity 0.4s;
+    height: 100%;
 }
 
 @media (any-hover: hover) {
@@ -202,7 +209,6 @@ img {
 
 .fv {
     position: relative;
-    margin-top: 5rem;
 }
 
 .fv__image img {
@@ -418,6 +424,12 @@ img {
     }
 }
 
+@media (max-width:767px) {
+    .features__title span {
+        display: inline-block;
+}
+}
+
 .features__title h3 {
     font-size: 2.2rem;
     font-weight: 700;
@@ -614,7 +626,6 @@ img {
         flex-direction: column;
         padding: 2.8rem 1rem 2.7rem;
         align-items: start;
-        padding-right: 0;
     }
 }
 
@@ -778,11 +789,10 @@ img {
     line-height: calc(40 / 25);
 }
 
-.tel-pc {
-    font-weight: 700;
-    color: var(--color-sub);
-    font-size: 2.5rem;
-    line-height: calc(40 / 25);
+@media (min-width:768px) {
+    a[href^="tel:"] {
+        pointer-events: none;
+    }
 }
 
 .address__email {
@@ -928,7 +938,7 @@ img {
     height: 4rem;
     padding-inline: 1rem;
     display: block;
-    line-height: calc(40 / 17);
+    line-height: calc(30 / 17);
     font-size: 1.7rem;
 }
 
@@ -937,7 +947,7 @@ img {
         flex: initial;
         height: 5rem;
         font-size: 1.6rem;
-        line-height: calc(40 / 16);
+        line-height: calc(30 / 16);
     }
 }
 
