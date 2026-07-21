@@ -199,9 +199,12 @@ img {
     }
 }
 
+main {
+    margin-top: 5rem;
+}
+
 .fv {
     position: relative;
-    margin-top: 5rem;
 }
 
 .fv__image img {
